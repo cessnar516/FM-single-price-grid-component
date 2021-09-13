@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5eff5;
+  padding: 4em 2em;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+h2 {
+  font-size: 1.3em;
+  color: #186766;
+}
+
+h3 {
+  font-size: 1.1em;
+  color: white;
+}
+
+.main-content {
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 10px 20px 1px rgba(0, 0, 0, 0.2);
+}
+@media screen and (min-width: 900px) {
+  .main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+@media screen and (min-width: 900px) {
+  .card {
+    padding: 2em 3em;
+  }
+}
+.card p {
+  font-size: 0.9em;
+  line-height: 1.7;
+}
+
+#join {
+  background-color: white;
+}
+@media screen and (min-width: 900px) {
+  #join {
+    grid-column: span 2;
+  }
+}
+#join p {
+  color: #5d7a92;
+}
+#join .emph {
+  font-weight: 700;
+  color: #647613;
+  line-height: inherit;
+  font-size: 1em;
+}
+
+#subscription {
+  background-color: #186766;
+  color: white;
+  font-size: 1.1rem;
+}
+#subscription .price span {
+  font-size: 2.2em;
+  padding-right: 0.3em;
+  position: relative;
+  top: 0.15em;
+}
+
+.sign-up {
+  display: block;
+  color: white;
+  background-color: #647613;
+  padding: 1em;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-top: 2rem 0 1rem;
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border: 2px solid #647613;
+}
+.sign-up:hover {
+  border-color: white;
+}
+.sign-up:focus {
+  outline: 1px solid white;
+}
+
+#why {
+  background-color: #1d7c7a;
+  color: white;
+}
+#why ul {
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 1.7;
+  padding: 0;
+}
+
+.attribution {
+  font-size: 0.7em;
+  text-align: center;
+  width: 100%;
+  margin-top: 5em;
+}
+.attribution a {
+  color: #3e52a3;
+}
+.attribution a:focus {
+  outline: 1px solid #3e52a3;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,118 @@
+// Colors
+$primary: hsl(179, 62%, 25%)
+$secondary: hsl(71, 72%, 27%)
+$light-gray: hsl(204, 43%, 93%)
+$accent: hsl(207, 22%, 47%)
+$footer-link-color: hsl(228, 45%, 44%)
+
+// Screen Sizes
+$screen-sm: 375px
+$screen-lg: 900px
+
+//Typography 
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap')
+$base-font-family: 'Karla', sans-serif
+$base-font-size: 16px
+
+*
+    box-sizing: border-box
+    &::before, &::after
+        box-sizing: inherit
+
+body
+    display: flex
+    flex-direction: column
+    align-items: center
+    background-color: $light-gray
+    padding: 4em 2em
+    font-family: $base-font-family
+    font-size: $base-font-size
+
+h1
+    text-align: center
+    margin-bottom: 2em
+
+h2
+    font-size: 1.3em
+    color: $primary
+
+h3
+    font-size: 1.1em
+    color: white
+
+.main-content
+    border-radius: 10px
+    overflow: hidden
+    width: 100%
+    max-width: 800px
+    box-shadow: 0 10px 20px 1px hsla(0, 0%, 0%, .2)
+    @media screen and (min-width: $screen-lg)
+        display: grid
+        grid-template-columns: 1fr 1fr
+
+.card
+    padding: 2em
+    @media screen and (min-width: $screen-lg)
+        padding: 2em 3em
+    p
+        font-size: .9em
+        line-height: 1.7
+
+#join
+    background-color: white
+    @media screen and (min-width: $screen-lg)
+        grid-column: span 2
+    p
+        color: $accent
+    .emph
+        font-weight: 700
+        color: $secondary
+        line-height: inherit
+        font-size: 1em
+
+#subscription
+    background-color: $primary
+    color: white
+    font-size: 1.1rem
+    .price span
+        font-size: 2.2em
+        padding-right: .3em
+        position: relative
+        top: .15em
+
+.sign-up
+    display: block
+    color: white
+    background-color: $secondary
+    padding: 1em
+    border-radius: 5px
+    text-align: center
+    text-decoration: none
+    font-weight: 700
+    font-size: .9em
+    margin-top: 2rem 0 1rem
+    box-shadow: 0 2px 8px 2px hsla(0, 0%, 0%, .2)
+    border: 2px solid $secondary
+    &:hover
+        border-color: white
+    &:focus
+        outline: 1px solid white
+
+#why
+    background-color: hsl(179, 62%, 30%)
+    color: white
+    ul
+        list-style-type: none
+        font-size: .9em
+        line-height: 1.7
+        padding: 0
+
+.attribution
+    font-size: .7em
+    text-align: center
+    width: 100%
+    margin-top: 5em
+    a
+        color: $footer-link-color
+        &:focus
+            outline: 1px solid $footer-link-color
