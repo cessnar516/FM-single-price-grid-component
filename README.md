@@ -37,8 +37,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [GitHub Repo](https://your-solution-url.com)
-- Live Site URL: [GitHub Pages](https://your-live-site-url.com)
+- Solution URL: [GitHub Repo](https://github.com/cessnar516/FM-single-price-grid-component)
+- Live Site URL: [GitHub Pages](https://cessnar516.github.io/FM-single-price-grid-component/)
 
 ## My process
 
